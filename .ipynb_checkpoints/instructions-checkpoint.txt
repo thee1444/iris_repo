@@ -1,0 +1,101 @@
+# Homework: Python Environment Setup & Iris Dataset Analysis
+
+**Topic:** Python, uv, Pandas, and CSV Data Analysis
+
+**Assignment Type:** Individual
+
+**Difficulty Level:** Beginner
+
+**Submission:** Python Project + Jupyter Notebook
+
+## Objective
+
+The goal of this assignment is to practice creating a Python project using `uv`, managing dependencies, loading a real dataset using Pandas, and performing basic data exploration and analysis.
+
+## Task 1: Create a Python Project Using uv
+
+1. Create a new folder named `iris-analysis`.
+2. Initialize a Python project using `uv`.
+3. Create a virtual environment (`.venv`).
+4. Activate the virtual environment.
+5. Install Pandas and Jupyter Notebook using `uv`.
+6. Verify that Pandas is installed successfully.
+
+**Required Commands:**
+- `uv init iris-analysis`
+- `cd iris-analysis`
+- `uv venv`
+- `uv add pandas notebook`
+- `uv run jupyter notebook`
+
+## Task 2: Download the Iris Dataset
+
+Download the Iris dataset from the following direct CSV link:
+
+https://raw.githubusercontent.com/mwaskom/seaborn-data/master/iris.csv
+
+**Requirements:**
+1. Create a folder called `data` inside your project.
+2. Download the dataset using `curl` from the terminal.
+3. Save it as `data/iris.csv`.
+4. Verify that the file exists and is not empty.
+
+**Important:** The CSV file must be stored inside the project folder, not outside it.
+
+## Task 3: Load the Dataset Using Pandas
+
+Create a Jupyter Notebook named `iris_analysis.ipynb`.
+
+Using Pandas:
+
+1. Import the Pandas library.
+2. Read the CSV file using `pd.read_csv()`.
+3. Store the dataset in a DataFrame named `df`.
+4. Display the first 5 rows.
+5. Display the last 5 rows.
+6. Display the number of rows and columns.
+7. Display all column names.
+8. Display the data types of all columns.
+
+## Task 4: Explore and Analyze the Dataset
+
+Use Pandas to answer the following questions:
+
+1. How many rows and columns are in the dataset?
+2. Are there any missing values? Show the number of missing values in each column.
+3. Are there any duplicate rows?
+4. How many unique Iris species are there?
+5. How many flowers belong to each species?
+6. What is the average sepal length?
+7. What is the maximum petal length?
+8. What is the minimum sepal width?
+9. Calculate the mean of each numeric column for each species using `groupby()`.
+10. Display descriptive statistics using `describe()`.
+
+## Task 5: Filter and Analyze Data
+
+Using Pandas:
+
+1. Display all flowers where `sepal_length > 6`.
+2. Display all flowers where `petal_width > 1.5`.
+3. Display only the flowers belonging to the `setosa` species.
+4. Find the species with the highest average petal length.
+5. Sort the dataset by `sepal_length` in descending order.
+
+## Task 6: Export Analysis Results
+
+1. Create a folder called `output`.
+2. Save the species-level summary statistics to `output/species_summary.csv`.
+3. Save all flowers with `sepal_length > 6` to `output/filtered_iris.csv`.
+4. Confirm that both files have been created successfully.
+
+## Task 7: Submission Requirements
+
+Submit a ZIP file named `iris_analysis_studentname.zip` containing:
+
+- `pyproject.toml`
+- `uv.lock`
+- `iris_analysis.ipynb`
+- `data/iris.csv`
+- `output/species_summary.csv`
+... (29 lines left)
